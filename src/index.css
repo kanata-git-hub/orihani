@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'KyoboHandwriting';
+  src: url('./KyoboHandwriting2024psw.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@theme {
+  --color-primary: #552c24;
+  --color-accent: #ffcd4a;
+  --font-custom: 'KyoboHandwriting', sans-serif;
+}
+
+body {
+  font-family: var(--font-custom);
+  font-size: 1.125rem; /* Base size + */
+}
