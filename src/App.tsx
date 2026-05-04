@@ -94,9 +94,14 @@ export default function App() {
       
       {/* Floating Bottom Right Button */}
       <a 
-        href="https://naver.me/FzsJSH0h"
+        href="https://m.booking.naver.com/booking/13/bizes/1520704/items/7140755"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => {
+          if (typeof (window as any).gtag === 'function') {
+            (window as any).gtag('event', 'click_naver_reservation');
+          }
+        }}
         className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 bg-accent text-primary px-5 py-3 rounded-full font-bold shadow-2xl hover:bg-[#ffe180] transition-transform hover:scale-105 flex items-center gap-1 md:gap-1.5 border-2 border-primary/10 group"
       >
         <span className="text-base md:text-lg">예약</span>
