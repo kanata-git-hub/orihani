@@ -75,8 +75,12 @@ export default function FooterSection() {
                 <span className="text-white/90 font-bold bg-white/10 px-2.5 md:px-3 py-1 rounded-lg text-base md:text-lg whitespace-nowrap border border-white/20">점심시간</span>
                 <span className="text-white/90 text-right ml-4">14:00 - 15:00</span>
               </li>
+              <li className="flex justify-between border-b border-white/10 pb-3 md:pb-4 items-center">
+                <span className="text-accent font-bold bg-accent/20 px-2.5 md:px-3 py-1 rounded-lg text-base md:text-lg whitespace-nowrap">토요일</span>
+                <span className="text-accent font-bold text-right ml-4">10:00 - 14:00</span>
+              </li>
               <li className="flex justify-between pt-3 md:pt-4 items-center">
-                <span className="text-red-400">주말 / 공휴일</span>
+                <span className="text-red-400">일요일 / 공휴일</span>
                 <span className="text-red-400 font-bold text-right ml-4">휴진</span>
               </li>
             </ul>
