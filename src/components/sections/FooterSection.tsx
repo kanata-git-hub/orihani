@@ -65,7 +65,7 @@ export default function FooterSection() {
             <ul className="space-y-3 md:space-y-4 text-lg md:text-xl">
               <li className="flex justify-between border-b border-white/10 pb-3 md:pb-4 items-center">
                 <span className="text-white/70">평일</span>
-                <span className="text-white font-bold text-right ml-4">11:00 - 19:30</span>
+                <span className="text-white font-bold text-right ml-4">10:00 - 19:00</span>
               </li>
               <li className="flex justify-between border-b border-white/10 pb-3 md:pb-4 items-center">
                 <span className="text-accent font-bold bg-accent/20 px-2.5 md:px-3 py-1 rounded-lg text-base md:text-lg whitespace-nowrap">점심 진료 실시</span>
