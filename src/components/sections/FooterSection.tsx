@@ -103,7 +103,7 @@ export default function FooterSection() {
               <Globe className="w-6 h-6" />
               <span className="sr-only">네이버 블로그</span>
             </a>
-            <a href="https://www.youtube.com/@%EC%98%A4%EB%A6%AC%ED%95%9C%EC%9D%98%EC%9B%90" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-accent hover:text-primary transition-colors rounded-full text-white">
+            <a href="https://www.youtube.com/@Dr.O_Sitcom" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 hover:bg-accent hover:text-primary transition-colors rounded-full text-white">
               <Youtube className="w-6 h-6" />
               <span className="sr-only">유튜브 채널</span>
             </a>
