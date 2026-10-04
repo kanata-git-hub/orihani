@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronDown } from 'lucide-react';
 import { FAQ_DATA } from '../../constants/data';
 
 export default function FAQSection() {
@@ -12,16 +13,17 @@ export default function FAQSection() {
 
         <div className="space-y-4 md:space-y-6">
           {FAQ_DATA.map((faq, idx) => (
-            <div key={idx} className="bg-white p-6 md:p-8 rounded-2xl border border-primary/5 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4 flex items-start gap-3">
+            <details key={idx} className="group bg-white p-6 md:p-8 rounded-2xl border border-primary/5 shadow-sm" open={idx === 0}>
+              <summary className="text-xl md:text-2xl font-bold text-primary flex items-start gap-3 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                 <span className="text-accent shrink-0">Q.</span>
-                <span className="break-keep">{faq.q}</span>
-              </h3>
-              <p className="text-lg md:text-xl text-primary/70 pl-8 md:pl-10 leading-relaxed break-keep">
+                <span className="break-keep flex-1">{faq.q}</span>
+                <ChevronDown aria-hidden="true" className="w-6 h-6 mt-1 shrink-0 transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="text-lg md:text-xl text-primary/70 pl-8 md:pl-10 mt-4 leading-relaxed break-keep">
                 <span className="font-bold text-primary/40 mr-2">A.</span>
                 {faq.a}
               </p>
-            </div>
+            </details>
           ))}
         </div>
       </div>

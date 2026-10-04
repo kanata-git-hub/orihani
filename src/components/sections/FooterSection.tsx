@@ -88,11 +88,11 @@ export default function FooterSection() {
         </div>
 
         <div className="bg-[#fff8ea] rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 lg:p-16 text-center border-4 border-accent shadow-2xl relative overflow-hidden">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6 relative z-10 break-keep">더 이상 통증을 참지 마세요.</h2>
-          <p className="text-xl md:text-2xl text-primary/70 mb-8 md:mb-10 relative z-10 break-keep">친절하고 세밀한 상담부터 시작합니다.</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6 relative z-10 break-keep">반복되는 결림과 통증,<br/>오리한의원에서 진료받으세요.</h2>
+          <p className="text-xl md:text-2xl text-primary/70 mb-8 md:mb-10 relative z-10 break-keep">불편한 부위와 동작을 알려주세요. 상태에 맞는 도침·약침 치료를 계획합니다.</p>
           <NaverCTA 
             className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 text-xl md:text-2xl shadow-xl shadow-accent/30 hover:shadow-accent/50 relative z-10" 
-            text="지금 네이버로 예약하기" 
+            text="네이버 진료 예약하기"
             showIcon={true}
           />
         </div>
@@ -115,7 +115,7 @@ export default function FooterSection() {
 
           <div className="text-center text-white/40 text-base md:text-lg">
             <p>© {new Date().getFullYear()} 오리한의원. All rights reserved.</p>
-            <p className="mt-3 md:mt-4 text-sm md:text-base break-keep">본 페이지의 모든 내용은 의료법을 준수하여 작성되었습니다.<br className="hidden md:block"/>환자 개인의 체질과 상태에 따라 치료 결과가 다를 수 있으며, 시술 전 원장님과의 1:1 상담이 필수입니다.</p>
+            <p className="mt-3 md:mt-4 text-sm md:text-base break-keep">치료 방법과 결과는 진단 및 개인 상태에 따라 다릅니다.<br className="hidden md:block"/>시술 전 예상 효과와 부작용, 주의사항을 설명드리고 진료 후 치료 여부를 결정합니다.</p>
           </div>
         </div>
       </div>

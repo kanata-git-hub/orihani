@@ -63,7 +63,7 @@ export default function App() {
         <div className="w-full overflow-hidden bg-white/50 border-t border-accent/10">
           <div className="max-w-5xl mx-auto px-2 md:px-6 py-2 flex items-center overflow-x-auto whitespace-nowrap scrollbar-hide space-x-2 md:space-x-3">
             <button onClick={() => scrollTo('clinic-pain')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
-              만성통증
+              도침·통증
             </button>
             <button onClick={() => scrollTo('clinic-diet')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
               다이어트
