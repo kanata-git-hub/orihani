@@ -25,7 +25,7 @@ export default function SolutionInternalSection() {
             </li>
             <li className="flex items-start gap-4 md:gap-5">
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
-              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">자도 쉬어도 피곤하고, 퇴근하면 누워 있기 바쁘신가요?</strong> 피로를 덜고 퇴근 후에도 내 생활을 할 힘을 되찾도록 돕겠습니다. 피로 양상과 몸 상태, 소화력을 살펴 <strong className="text-primary">명품 경옥고</strong>와 <strong className="text-primary">원방 공진단</strong>을 처방합니다.</span>
+              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">자도 쉬어도 피곤하고, 퇴근하면 누워 있기 바쁘신가요?</strong> 피로를 덜고 퇴근 후에도 내 생활을 할 힘을 되찾도록 돕겠습니다. 피로 양상과 몸 상태, 소화력을 살펴 <strong className="text-primary">한약</strong>을 처방합니다.</span>
             </li>
           </ul>
         </motion.div>
