@@ -12,7 +12,7 @@ export default function SolutionDietSection() {
     <section id="clinic-diet" className="py-16 md:py-28 bg-[#fefaf4] scroll-mt-24">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-primary break-keep">솔루션 2. 요요 없는 다이어트</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-primary break-keep">솔루션 3. 요요 없는 다이어트</h2>
           <p className="text-xl md:text-2xl text-primary/70 break-keep">무조건 굶고 참는 식욕 억제제는 안녕!</p>
         </motion.div>
         

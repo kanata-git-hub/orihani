@@ -12,24 +12,24 @@ export default function SolutionInternalSection() {
     <section id="clinic-internal" className="py-16 md:py-28 bg-white scroll-mt-24">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-primary break-keep">솔루션 3. 비위 중심 1:1 맞춤 한약</h2>
-          <p className="text-xl md:text-2xl text-primary/70 break-keep">속이 편안한 피부, 소화기, 알레르기 질환 관리</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-primary break-keep">솔루션 2. 만성 소화불량·피로</h2>
+          <p className="text-xl md:text-2xl text-primary/70 break-keep">소화제 달고 사는 속, 쉬어도 지친 몸</p>
         </motion.div>
         
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-[#fefaf4] p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] shadow-lg border-2 border-[#fff8ea]">
-          <p className="text-lg md:text-xl text-primary mb-6 md:mb-8 font-bold bg-accent/20 inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-xl">소화기 상태를 최우선으로 점검합니다.</p>
+          <p className="text-lg md:text-xl text-primary mb-6 md:mb-8 font-bold bg-accent/20 inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-xl">한 끼를 편하게, 하루를 가볍게.</p>
           <ul className="space-y-6 md:space-y-8">
             <li className="flex items-start gap-4 md:gap-5">
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
-              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">소화기 질환:</strong> 만성 소화불량, 과민성 대장 증후군 등 위장 문제를 근본적으로 치료합니다.</span>
+              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">만성 소화불량:</strong> 오래 반복된 체기·더부룩함을 줄여, 한 끼를 편하게 드시도록 <strong className="text-primary">한약 처방.</strong></span>
             </li>
             <li className="flex items-start gap-4 md:gap-5">
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
-              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">피부 및 알레르기 질환:</strong> 아토피, 비염 등 면역 체계를 바로잡아 편안한 일상을 되찾아 드립니다.</span>
+              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">만성 피로 회복:</strong> 자도 쉬어도 남는 피로를 덜고, 퇴근 후에도 내 생활을 할 힘을 되찾도록.</span>
             </li>
             <li className="flex items-start gap-4 md:gap-5">
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
-              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">만성 피로 회복:</strong> 피로를 덜고 활력을 돋우는 <strong className="text-primary">명품 경옥고</strong> 및 <strong className="text-primary">원방 공진단</strong> 처방.</span>
+              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">복용 후에도 꼼꼼하게:</strong> 식후 불편함과 피로의 변화를 살펴 처방을 조정합니다.</span>
             </li>
           </ul>
         </motion.div>
