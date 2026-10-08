@@ -13,8 +13,8 @@ export default function PainPointSection() {
     <section className="py-16 md:py-28 bg-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeIn}>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-primary break-keep">왜 늘 어깨가 뭉치고, 치료받아도 다시 아플까요?</h2>
-          <p className="text-xl md:text-2xl text-primary/60 mb-10 md:mb-16 break-keep">잠깐의 완화가 아닌, 근본적인 원인을 찾아야 할 때입니다.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-primary break-keep">풀어도 다시 뭉치고,<br/>같은 곳이 계속 아프신가요?</h2>
+          <p className="text-xl md:text-2xl text-primary/70 mb-10 md:mb-16 break-keep">반복되는 결림부터 오래된 통증까지, 불편한 동작을 함께 살핍니다.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20">
@@ -42,10 +42,9 @@ export default function PainPointSection() {
             <img src={CharacterImage} alt="오원장 캐릭터" className="w-full h-full object-contain" />
           </div>
           <div>
-            <p className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">단순 근육 뭉침이 아닙니다.</p>
+            <p className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">어디가 아픈지, 어떤 동작이 불편한지.</p>
             <p className="text-xl md:text-2xl leading-relaxed">
-              원인은 오래되어 엉겨 붙은 <strong className="bg-accent/40 px-2 pb-1 rounded-lg">유착</strong>과<br />
-              무너진 <strong className="bg-accent/40 px-2 pb-1 rounded-lg">대사 밸런스</strong>에 있습니다.
+              통증에는 근육·힘줄 등 여러 조직이 관여합니다. 진찰을 통해 <strong className="bg-accent/40 px-2 pb-1 rounded-lg">도침이 필요한 부위</strong>를 판단하고, 통증과 움직임의 변화를 확인하며 치료합니다.
             </p>
           </div>
         </motion.div>

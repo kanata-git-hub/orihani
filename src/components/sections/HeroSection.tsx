@@ -1,5 +1,4 @@
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import NaverCTA from '../NaverCTA';
 import DoctorImage from '../../프사 1대1.png';
@@ -18,21 +17,23 @@ export default function HeroSection() {
           className="flex flex-col items-start z-10"
         >
           <span className="inline-block px-4 py-1.5 md:px-5 md:py-2 mb-4 md:mb-6 text-lg md:text-xl font-bold text-primary bg-accent/30 rounded-full mt-8 md:mt-0">
-            동대구역 직장인 맞춤 한방 주치의
+            대구 신천동 · 도침·약침 통증 진료
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-primary mb-6 md:mb-8 break-keep">
-            물리치료를 받아도<br/>그 때 뿐인가요?<br/>
+            반복되는 결림과 통증,<br/>
             <span className="relative inline-block mt-2">
               <span className="absolute bottom-1 md:bottom-2 left-0 w-full h-3 md:h-4 bg-accent -z-10 opacity-70"></span>
-              반복된 통증, 이제 '원인'을 끊어냅니다.
+              도침으로 치료합니다.
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-primary/80 mb-8 md:mb-10 max-w-lg leading-relaxed font-medium">
-            1개월 이상 지속된 지독한 통증부터<br/>
-            지친 일상의 피로까지.<br/> 
-            오리한의원에서 답답했던 몸의 짐을 내려놓으세요.
+            늘 뭉치는 목·어깨, 뻣뻣한 허리,<br/>
+            움직일 때 당기는 관절.<br/>
+            아픈 부위와 움직임을 함께 살피고,<br/>
+            상태에 맞춘 도침·약침으로<br/>
+            통증 완화와 움직임 개선을 돕습니다.
           </p>
-          <NaverCTA className="px-8 py-4 md:px-10 md:py-5 text-xl md:text-2xl w-full sm:w-auto" text="네이버 예약으로 통증 끝내기" />
+          <NaverCTA className="px-8 py-4 md:px-10 md:py-5 text-xl md:text-2xl w-full sm:w-auto" text="도침·통증 진료 예약" />
         </motion.div>
         
         <motion.div 
