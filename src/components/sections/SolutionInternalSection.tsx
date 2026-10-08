@@ -29,13 +29,18 @@ export default function SolutionInternalSection() {
               className="w-full h-auto rounded-2xl"
             />
             <h3 className="text-2xl md:text-3xl font-bold leading-relaxed text-primary break-keep">
-              매번 체해서,<br />먹는 게 겁나셨나요?
+              한 끼를 편안하게<br />먹고 싶다면
             </h3>
           </div>
           <ul className="space-y-6 md:space-y-8">
             <li className="flex items-start gap-4 md:gap-5">
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
-              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">만성 소화불량:</strong> 반복되는 체기·더부룩함을 줄여, 한 끼를 편하게 드시도록 <strong className="text-primary">한약 처방.</strong></span>
+              <div className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5 space-y-4">
+                <h4 className="text-primary font-bold">만성 소화불량</h4>
+                <p>조금만 먹어도 더부룩하고, 음식이 내려가지 않는 듯 답답하신가요? 자주 체하고 입맛까지 떨어졌다면 소화 상태를 살펴볼 필요가 있습니다.</p>
+                <p>증상과 몸 상태에 따라, 위장 운동을 돕고 약해진 소화 기능을 보완하는 한약을 처방합니다.</p>
+                <p className="text-primary font-bold">식후 더부룩함과 답답함이 줄고, 식사가 한결 편안해질 수 있습니다.</p>
+              </div>
             </li>
             <li className="bg-accent/20 rounded-2xl p-5 md:p-6">
               <p className="text-xl md:text-2xl font-bold leading-relaxed break-keep">
@@ -46,9 +51,15 @@ export default function SolutionInternalSection() {
             </li>
             <li className="flex items-start gap-4 md:gap-5">
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
-              <span className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5"><strong className="text-primary font-bold">만성 피로 회복:</strong> 자도 쉬어도 남는 피로를 덜고, 퇴근 후에도 내 생활을 할 힘을 되찾도록.</span>
+              <div className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5 space-y-4">
+                <h3 className="text-primary font-bold">만성 피로 — 쉬어도 피곤하고 잠까지 불편하다면</h3>
+                <p>아침부터 몸이 무겁고, 조금만 움직여도 쉽게 지치시나요? 피곤한데도 스트레스로 잠들기 어렵거나, 자고 나도 개운하지 않으신가요?</p>
+                <p>피로의 원인과 소화·수면 상태를 살핀 뒤, 기력을 보충하고 동반된 긴장과 수면 불편을 다스리는 한약을 몸 상태에 맞게 처방합니다.</p>
+                <p className="text-primary font-bold">밤에는 잠들기가 한결 편해지고, 낮에는 피로감이 줄어 일상생활이 수월해질 수 있습니다.</p>
+              </div>
             </li>
           </ul>
+          <p className="mt-8 text-base text-primary/70 leading-relaxed break-keep">치료 효과와 기간에는 개인차가 있습니다.</p>
         </motion.div>
       </div>
     </section>

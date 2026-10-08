@@ -66,7 +66,7 @@ export default function App() {
               만성통증
             </button>
             <button onClick={() => scrollTo('clinic-internal')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
-              소화불량
+              소화불량·피로
             </button>
             <button onClick={() => scrollTo('clinic-diet')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
               다이어트
