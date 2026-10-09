@@ -23,6 +23,24 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    let frame = 0;
+    const openSection = () => {
+      const id = window.location.hash.slice(1);
+      if (!id.startsWith('clinic-')) return;
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({ block: 'start' });
+      });
+    };
+    openSection();
+    window.addEventListener('hashchange', openSection);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('hashchange', openSection);
+    };
+  }, []);
+
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
