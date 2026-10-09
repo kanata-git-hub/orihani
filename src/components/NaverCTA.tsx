@@ -5,12 +5,13 @@ interface NaverCTAProps {
   className?: string;
   text?: string;
   showIcon?: boolean;
+  placement?: string;
 }
 
-export default function NaverCTA({ className = "", text = "네이버 예약하기", showIcon = true }: NaverCTAProps) {
+export default function NaverCTA({ className = "", text = "네이버 예약하기", showIcon = true, placement = "general" }: NaverCTAProps) {
   const handleClick = () => {
     if (typeof (window as any).gtag === 'function') {
-      (window as any).gtag('event', 'click_naver_reservation');
+      (window as any).gtag('event', 'click_naver_reservation', { cta_placement: placement });
     }
   };
 
