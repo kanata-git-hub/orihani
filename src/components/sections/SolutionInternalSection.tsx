@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 import DeokIDyspepsia from '../../assets/deok-i-dyspepsia.webp';
+import DeokIFatigue from '../../assets/deok-i-fatigue.webp';
 import NaverCTA from '../NaverCTA';
 
 const fadeIn = {
@@ -65,14 +66,30 @@ export default function SolutionInternalSection() {
                 <HerbalOffer />
               </div>
             </li>
-            <li id="clinic-fatigue" className="flex items-start gap-4 md:gap-5 scroll-mt-36 pt-5 border-t border-primary/10">
-              <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
-              <div className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5 space-y-4">
-                <h3 className="text-primary font-bold">만성 피로 — 쉬어도 피곤하고 잠까지 불편하다면</h3>
-                <p>아침부터 몸이 무겁고, 조금만 움직여도 쉽게 지치시나요? 피곤한데도 스트레스로 잠들기 어렵거나, 자고 나도 개운하지 않으신가요?</p>
-                <p>피로의 원인과 소화·수면 상태를 살핀 뒤, 기력을 보충하고 동반된 긴장과 수면 불편을 다스리는 한약을 몸 상태에 맞게 처방합니다.</p>
-                <p className="text-primary font-bold">밤에는 잠들기가 한결 편해지고, 낮에는 피로감이 줄어 일상생활이 수월해질 수 있습니다.</p>
-                <HerbalOffer />
+            <li id="clinic-fatigue" className="scroll-mt-36 pt-8 md:pt-10 border-t border-primary/10">
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center mb-6 md:mb-8">
+                <img
+                  src={DeokIFatigue}
+                  alt="아침에 침대 가장자리에 앉아 피곤해하는 덕이"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl"
+                />
+                <h3 className="text-2xl md:text-3xl font-bold leading-relaxed text-primary break-keep">
+                  자고 일어나도<br />벌써 피곤하다면
+                </h3>
+              </div>
+              <div className="flex items-start gap-4 md:gap-5">
+                <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
+                <div className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5 space-y-4">
+                  <h4 className="text-primary font-bold">만성 피로</h4>
+                  <p>아침부터 몸이 무겁고, 조금만 움직여도 쉽게 지치시나요? 피곤한데도 스트레스로 잠들기 어렵거나, 자고 나도 개운하지 않으신가요?</p>
+                  <p>피로의 원인과 소화·수면 상태를 살핀 뒤, 기력을 보충하고 동반된 긴장과 수면 불편을 다스리는 한약을 몸 상태에 맞게 처방합니다.</p>
+                  <p className="text-primary font-bold">밤에는 잠들기가 한결 편해지고, 낮에는 피로감이 줄어 일상생활이 수월해질 수 있습니다.</p>
+                  <HerbalOffer />
+                </div>
               </div>
             </li>
           </ul>
