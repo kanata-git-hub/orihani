@@ -50,7 +50,7 @@ export default function SolutionInternalSection() {
       <div className="max-w-4xl mx-auto px-6">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-primary break-keep">솔루션 2. 만성 소화불량·피로</h2>
-          <p className="text-xl md:text-2xl text-primary/70 break-keep">소화제 달고 사는 속, 쉬어도 지친 몸</p>
+          <p className="text-xl md:text-2xl text-primary/70 break-keep">반복되는 체기와 피로, 맞춤 한약으로 다스립니다.</p>
         </motion.div>
         
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-[#fefaf4] p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] shadow-lg border-2 border-[#fff8ea]">
@@ -65,7 +65,7 @@ export default function SolutionInternalSection() {
               className="w-full h-auto rounded-2xl"
             />
             <h3 className="text-2xl md:text-3xl font-bold leading-relaxed text-primary break-keep">
-              한 끼를 편안하게<br />먹고 싶다면
+              또 체할까 걱정되는 식사,<br />이제 편안하게
             </h3>
           </div>
           <ul className="space-y-6 md:space-y-8">
@@ -73,9 +73,9 @@ export default function SolutionInternalSection() {
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
               <div className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5 space-y-4">
                 <h4 className="text-primary font-bold">만성 소화불량</h4>
-                <p>조금만 먹어도 더부룩하고, 음식이 내려가지 않는 듯 답답하신가요? 자주 체하고 입맛까지 떨어졌다면 소화 상태를 살펴볼 필요가 있습니다.</p>
-                <p>증상과 몸 상태에 따라, 위장 운동을 돕고 약해진 소화 기능을 보완하는 한약을 처방합니다.</p>
-                <p className="text-primary font-bold">식후 더부룩함과 답답함이 줄고, 식사가 한결 편안해질 수 있습니다.</p>
+                <p>조금만 먹어도 꽉 막힌 듯 답답하고, 먹는 즐거움마저 잃으셨나요? 반복되는 더부룩함과 체기, 그때그때 넘기지 말고 치료를 시작하세요.</p>
+                <p>오리한의원은 식후 불편감과 식욕, 평소 몸 상태를 꼼꼼히 짚어 맞춤 한약을 처방합니다. 위장 운동을 돕고 약해진 소화 기능을 다스리는 치료에 집중합니다.</p>
+                <p className="text-primary font-bold">답답한 속을 다스리고, 한 끼를 편안하게 먹는 일상을 되찾으세요.</p>
                 <HerbalOffer care="digestion" />
               </div>
             </li>
@@ -91,16 +91,16 @@ export default function SolutionInternalSection() {
                   className="w-full h-auto rounded-2xl"
                 />
                 <h3 className="text-2xl md:text-3xl font-bold leading-relaxed text-primary break-keep">
-                  자고 일어나도<br />벌써 피곤하다면
+                  쉬어도 지치는 하루,<br />이제 활력을 되찾으세요.
                 </h3>
               </div>
               <div className="flex items-start gap-4 md:gap-5">
                 <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-accent shrink-0" />
                 <div className="text-xl md:text-2xl text-primary/80 leading-relaxed break-keep mt-0.5 space-y-4">
                   <h4 className="text-primary font-bold">만성 피로</h4>
-                  <p>아침부터 몸이 무겁고, 조금만 움직여도 쉽게 지치시나요? 피곤한데도 스트레스로 잠들기 어렵거나, 자고 나도 개운하지 않으신가요?</p>
-                  <p>피로의 원인과 소화·수면 상태를 살핀 뒤, 기력을 보충하고 동반된 긴장과 수면 불편을 다스리는 한약을 몸 상태에 맞게 처방합니다.</p>
-                  <p className="text-primary font-bold">밤에는 잠들기가 한결 편해지고, 낮에는 피로감이 줄어 일상생활이 수월해질 수 있습니다.</p>
+                  <p>아침부터 몸이 무겁고, 퇴근하면 눕기 바쁘신가요? 쉬는 날마저 피로를 풀다 끝난다면, 이제 반복되는 피로를 치료할 때입니다.</p>
+                  <p>오리한의원은 피로의 양상과 소화·수면 상태를 함께 살펴 맞춤 한약을 처방합니다. 부족한 기력을 보충하고 긴장과 수면 불편을 다스려, 지친 일상을 회복하는 데 집중합니다.</p>
+                  <p className="text-primary font-bold">밤에는 편안하게, 낮에는 활기차게. 피로에 빼앗긴 내 하루를 되찾으세요.</p>
                   <HerbalOffer care="fatigue" />
                 </div>
               </div>
