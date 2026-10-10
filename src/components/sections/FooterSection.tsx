@@ -88,8 +88,8 @@ export default function FooterSection() {
         </div>
 
         <div className="bg-[#fff8ea] rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 lg:p-16 text-center border-4 border-accent shadow-2xl relative overflow-hidden">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6 relative z-10 break-keep">더 이상 통증을 참지 마세요.</h2>
-          <p className="text-xl md:text-2xl text-primary/70 mb-8 md:mb-10 relative z-10 break-keep">친절하고 세밀한 상담부터 시작합니다.</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6 relative z-10 break-keep">불편한 몸, 더 이상 참지 마세요.</h2>
+          <p className="text-xl md:text-2xl text-primary/70 mb-8 md:mb-10 relative z-10 break-keep">통증·소화불량·피로, 내 몸에 맞는 치료를 시작하세요.</p>
           <NaverCTA 
             className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 text-xl md:text-2xl shadow-xl shadow-accent/30 hover:shadow-accent/50 relative z-10" 
             text="지금 네이버로 예약하기" 
