@@ -10,11 +10,11 @@ export const REVIEW_KEYWORDS = [
 ];
 
 export const NAV_LINKS = [
-  { id: 'clinic-pain', label: '만성통증' },
+  { id: 'clinic-pain', label: '통증' },
+  { id: 'clinic-digestion', label: '소화불량' },
+  { id: 'clinic-fatigue', label: '피로' },
   { id: 'clinic-diet', label: '다이어트' },
-  { id: 'clinic-internal', label: '맞춤 한약' },
-  { id: 'clinic-auto', label: '교통사고' },
-  { id: 'profile', label: '약력' }
+  { id: 'clinic-auto', label: '교통사고' }
 ];
 
 export const CLINIC_PAIN_CARDS = [

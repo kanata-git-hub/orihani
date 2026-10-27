@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, MapPin } from 'lucide-react';
 import NaverCTA from './components/NaverCTA';
+import { NAV_LINKS } from './constants/data';
 import LogoImage from './오리 - 로고_브라운(화이트).png';
 
 import HeroSection from './components/sections/HeroSection';
@@ -76,29 +77,19 @@ export default function App() {
           </div>
         </div>
         
-        {/* Quick Nav Bar (Always Visible) */}
-        <div className="w-full overflow-hidden bg-white/50 border-t border-accent/10">
-          <div className="max-w-5xl mx-auto px-2 md:px-6 py-2 flex items-center overflow-x-auto whitespace-nowrap scrollbar-hide space-x-2 md:space-x-3">
-            <button onClick={() => scrollTo('clinic-pain')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
-              통증 진료
-            </button>
-            <button onClick={() => scrollTo('clinic-internal')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
-              소화불량·피로
-            </button>
-            <button onClick={() => scrollTo('clinic-diet')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
-              다이어트
-            </button>
-            <button onClick={() => scrollTo('clinic-auto')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
-              교통사고
-            </button>
-            <button onClick={() => scrollTo('profile')} className="px-4 py-1.5 rounded-full bg-primary/5 hover:bg-accent/30 text-primary font-bold text-sm md:text-base whitespace-nowrap shrink-0 transition-colors">
-              약력
-            </button>
-          </div>
+        {/* Five clinic destinations stay visible in one row. */}
+        <div className="w-full bg-white/50 border-t border-accent/10">
+          <nav className="clinic-nav" aria-label="진료 메뉴">
+            {NAV_LINKS.map(({ id, label }) => (
+              <button key={id} type="button" onClick={() => scrollTo(id)}>
+                {label}
+              </button>
+            ))}
+          </nav>
         </div>
       </header>
 
-      <HeroSection />
+      <HeroSection onShowProfile={() => scrollTo('profile')} />
       <PainPointSection />
       <SolutionPainSection />
       <SolutionInternalSection />

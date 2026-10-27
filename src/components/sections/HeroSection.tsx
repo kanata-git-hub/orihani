@@ -9,7 +9,7 @@ const fadeIn = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
-export default function HeroSection() {
+export default function HeroSection({ onShowProfile }: { onShowProfile: () => void }) {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 lg:pt-52 lg:pb-32 overflow-hidden bg-gradient-to-br from-[#fefaf4] via-white to-[#fff8ea]">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
@@ -45,6 +45,14 @@ export default function HeroSection() {
                  onError={(e) => { e.currentTarget.src = "https://via.placeholder.com/400x400/FFFBEB/D97706?text=Image+Not+Found"; }} />
           </div>
           
+          <button
+            type="button"
+            onClick={onShowProfile}
+            className="absolute top-0 right-0 inline-flex items-center gap-1 min-h-[44px] px-4 py-2 rounded-full bg-white border border-primary/20 shadow-sm text-primary text-base md:text-lg font-bold hover:bg-accent/20 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+          >
+            원장 소개 <ChevronRight className="w-4 h-4" aria-hidden="true" />
+          </button>
+
           <div className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 bg-white p-4 md:p-5 rounded-2xl md:rounded-3xl shadow-xl animate-bounce-slow border-2 border-accent">
             <div className="flex items-center gap-3 md:gap-4">
               <div className="bg-accent/20 p-2 md:p-3 rounded-full text-primary">
