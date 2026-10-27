@@ -11,7 +11,6 @@ import SolutionInternalSection from './components/sections/SolutionInternalSecti
 import SolutionAutoSection from './components/sections/SolutionAutoSection';
 import InteriorSection from './components/sections/InteriorSection';
 import ReviewSection from './components/sections/ReviewSection';
-import FAQSection from './components/sections/FAQSection';
 import FooterSection from './components/sections/FooterSection';
 
 export default function App() {
@@ -107,7 +106,6 @@ export default function App() {
       <SolutionAutoSection />
       <InteriorSection />
       <ReviewSection />
-      <FAQSection />
       <FooterSection />
       
       {/* Floating Bottom Right Button */}
