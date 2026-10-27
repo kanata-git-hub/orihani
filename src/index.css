@@ -78,3 +78,58 @@ body {
 @media(min-width:900px) {.care-section{padding:88px 0;font-size:18px}.care-grid{grid-template-columns:1fr 1fr;gap:40px}.care-article{padding:40px}.care-heading{margin-bottom:40px}}
 @media(max-width:420px) {header.fixed>div:first-child>div{gap:8px;padding-left:12px;padding-right:12px}header.fixed>div:first-child>div>button{gap:6px}header.fixed>div:first-child>div>button img{width:30px;height:30px}header.fixed>div:first-child>div>button span{font-size:18px}header.fixed>div:first-child>div>div{gap:8px}header.fixed>div:first-child>div>div>a{padding:8px 10px;font-size:14px}header.fixed>div:first-child>div>div>button{font-size:12px}}
 @media(prefers-reduced-motion:reduce) {*{scroll-behavior:auto!important}}
+
+/* Compact mobile guides: preserve copy, typeface and always-visible content. */
+@media (max-width: 639px) {
+  .care-section {padding:32px 0;line-height:1.65;}
+  .care-shell {width:calc(100% - 24px);}
+  .care-heading {margin:0 0 18px;}
+  .care-heading h2 {font-size:28px;line-height:1.35;margin:0;}
+  .care-section h3 {font-size:22px;line-height:1.4;margin-bottom:12px;}
+  .care-section h4 {line-height:1.4;margin-bottom:10px;}
+  .care-section p {margin-bottom:10px;}
+  .care-grid {gap:16px;}
+  .care-article {padding:16px 12px;margin-top:20px;border-radius:20px;}
+  .care-article:first-child {margin-top:0;}
+  .care-intro {grid-template-columns:minmax(0,1fr) 104px;gap:12px;margin-bottom:20px;}
+  .care-intro img {grid-column:2;grid-row:1;width:104px;height:104px;object-fit:cover;border-radius:14px;}
+  .care-intro .care-heading {grid-column:1;grid-row:1;margin:0;min-width:0;}
+  .care-intro h2 {font-size:26px;line-height:1.35;}
+  .care-intro .care-heading p {margin:8px 0 0;}
+  .care-two-cards {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+  .care-card {padding:14px 12px;border-radius:14px;min-width:0;}
+  .care-card strong {margin-top:10px;padding-top:10px;font-size:19px;line-height:1.5;}
+  .care-highlight {padding:14px;margin:16px 0;border-radius:14px;}
+  .care-highlight strong {font-size:21px;line-height:1.4;margin-bottom:6px;}
+  .care-highlight strong:last-child {margin-bottom:0;}
+  .care-treatment {margin:16px 0;padding:14px;border-radius:14px;}
+  .care-treatment h3:last-child {margin-bottom:0;}
+  .care-section .care-note {line-height:1.6;margin-bottom:10px;}
+  .care-offer {padding:14px;margin-top:14px;border-radius:16px;}
+  .care-offer p {margin-bottom:6px;}
+  .care-offer .care-price {font-size:23px;line-height:1.35;}
+  .care-offer .care-price strong {font-size:32px;}
+  .care-offer .care-note {margin:8px 0 0;}
+  .care-actions {display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:8px;margin-top:14px;}
+  .care-actions>.care-button:only-child {grid-column:1/-1;}
+  .care-button,.care-phone {min-width:0;min-height:48px;padding:10px 8px;line-height:1.4;}
+  .care-button svg {width:18px;height:18px;}
+  .care-dark .care-grid>div:first-child {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:center;}
+  .care-dark .care-grid>div:first-child>h3 {font-size:21px;margin:0;}
+  .care-dark .care-treatment {margin:0;padding:12px;}
+  .care-dark .care-treatment h3 {font-size:21px;}
+  .care-dark .care-highlight {grid-column:1/-1;margin:0;}
+  .care-chart {margin-top:12px;padding:12px 8px;border-radius:16px;}
+  .care-chart img {max-width:300px;}
+  .care-legend {padding:0 4px 8px;gap:4px 14px;}
+  .care-chart figcaption {padding:4px 4px 0;}
+  .care-auto .care-grid>div:first-child>h3 {margin-bottom:6px;}
+  .care-auto .care-grid>div:first-child>p {margin-bottom:0;}
+  .care-auto-treatments {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 8px;text-align:center;margin-bottom:0;}
+  .care-auto-treatments h3 {grid-column:1/-1;text-align:left;margin-bottom:6px;}
+  .care-auto-treatments h4 {margin:0!important;grid-row:2;}
+  .care-auto-treatments p {margin:0;grid-row:3;}
+  .care-auto-treatments h4:nth-of-type(1),.care-auto-treatments p:nth-of-type(1) {grid-column:1;}
+  .care-auto-treatments h4:nth-of-type(2),.care-auto-treatments p:nth-of-type(2) {grid-column:2;}
+  .care-auto-treatments h4:nth-of-type(3),.care-auto-treatments p:nth-of-type(3) {grid-column:3;}
+}
