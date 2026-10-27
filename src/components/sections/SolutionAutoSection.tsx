@@ -1,46 +1,21 @@
 import React from 'react';
-import { Clock } from 'lucide-react';
 import NaverCTA from '../NaverCTA';
-
+import { CareQuestions, RecoveryChart } from '../CareGuide';
 export default function SolutionAutoSection() {
-  return (
-    <section id="clinic-auto" className="py-16 md:py-28 bg-white scroll-mt-24">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="bg-[#fff8ea] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-xl border-2 border-accent/20 flex flex-col lg:flex-row">
-          <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center flex-1">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-primary break-keep">솔루션 4. 자동차 사고 클리닉</h2>
-            <p className="text-2xl md:text-3xl font-bold mb-4 text-primary/80 break-keep">점심시간을 활용한 후유증 집중 케어</p>
-            <p className="text-xl md:text-2xl text-primary/70 mb-8 md:mb-10 leading-relaxed break-keep">바빠서 치료를 미루지 마세요.<br/>직장인들을 위한 맞춤 프로세스로 꼼꼼하게 치료합니다.</p>
-            
-            <div className="space-y-3 md:space-y-4 mb-8">
-              <div className="flex justify-between items-center bg-white p-4 md:p-5 rounded-2xl shadow-sm border border-accent/10">
-                <span className="font-bold text-primary text-lg md:text-xl shrink-0">추나요법</span>
-                <span className="text-base md:text-lg text-primary/60 text-right ms-4 break-keep">충격으로 틀어진 척추 정렬 교정</span>
-              </div>
-              <div className="flex justify-between items-center bg-white p-4 md:p-5 rounded-2xl shadow-sm border border-accent/10">
-                <span className="font-bold text-primary text-lg md:text-xl shrink-0">한약</span>
-                <span className="text-base md:text-lg text-primary/60 text-right ms-4 break-keep">사고 후 발생한 증상 치료</span>
-              </div>
-              <div className="flex justify-between items-center bg-white p-4 md:p-5 rounded-2xl shadow-sm border border-accent/10">
-                <span className="font-bold text-primary text-lg md:text-xl shrink-0">약침 & 침</span>
-                <span className="text-base md:text-lg text-primary/60 text-right ms-4 break-keep">급성 염증과 경직된 근육 이완</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-primary text-[#fff8ea] p-8 md:p-12 lg:w-2/5 flex flex-col justify-center items-center text-center">
-            <Clock className="w-16 h-16 md:w-20 md:h-20 text-accent mb-6 md:mb-8 drop-shadow-lg" />
-            <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">직장인 점심 집중 진료</h3>
-            <div className="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4 md:mb-6 text-white border-b-4 border-accent pb-3 md:pb-4 inline-block">
-              11:30 <span className="text-2xl md:text-3xl font-normal text-accent mx-1 md:mx-2">~</span> 13:00
-            </div>
-            <p className="text-lg md:text-xl text-[#fefaf4]/80 mb-8 md:mb-10 leading-relaxed break-keep">
-              오후 업무에 지장 없도록, 점심시간을 활용해 체계적이고 빠른 치료를 제공합니다.
-            </p>
-            <NaverCTA className="w-full py-4 md:py-6 text-xl md:text-2xl shadow-accent/20" text="지금 바로 예약하기" />
-          </div>
-        </div>
+  return <section id="clinic-auto" className="care-section care-auto"><div className="care-shell">
+    <header className="care-heading"><p className="care-eyebrow">교통사고 후 진료</p><h2>목·허리 통증부터<br />어지럼과 잠의 변화까지</h2><p>사고 후 달라진 몸 상태를 함께 살핍니다.</p></header>
+    <div className="care-grid">
+      <div><h3>통증이 오르내리는<br />회복 과정을 확인합니다.</h3><p>원장의 임상 경험상 회복 과정을 한 달 정도 살펴보는 경우가 많습니다. 하루의 통증만 보지 않고 움직임·수면·일상 복귀를 함께 확인합니다.</p><RecoveryChart type="accident" /></div>
+      <div>
+        <div className="care-card care-mint"><p className="care-eyebrow">진료실에서 함께 살피는 증상</p><h3>어지럼 · 구역감<br />두근거림 · 불면</h3><p>원장의 임상 경험상, 내원한 교통사고 환자의 약 절반에서 이 중 하나 이상을 함께 호소하는 것으로 체감합니다.</p><p className="care-note">일반 인구의 통계가 아닌 원장의 진료 경험에 따른 설명입니다.</p></div>
+        <div className="care-treatment care-auto-treatments"><h4>약침 · 추나 · 침</h4><p>통증 부위와 움직임을 확인하고, 통증·염증 반응과 근육 긴장을 다스리는 치료를 조합합니다.</p><h4>동반 증상에 맞춘 한약</h4><p>필요한 경우 7일씩 경과를 확인하며 총 21일을 기본 안내로 삼습니다. 실제 처방 여부와 기간은 증상·진찰 결과에 따라 정합니다.</p></div>
       </div>
-    </section>
-  );
+    </div>
+    <CareQuestions items={[
+      { q: '통증 외의 증상도 말씀드려야 하나요?', a: '네. 사고 이후 생긴 어지럼, 구역감, 두근거림, 잠의 변화도 알려주세요. 기존 증상과 사고 후 달라진 점을 구분해 확인합니다. 모든 증상을 사고 후유증으로 단정하지 않고 필요한 평가를 안내합니다.' },
+      { q: '한 달이면 모두 회복되나요?', a: '한 달은 원장의 임상 경험을 바탕으로 경과를 설명하는 참고 기간입니다. 사고의 정도, 손상과 이전 건강 상태에 따라 더 짧거나 길어질 수 있습니다. 호전이 부족하거나 증상이 달라지면 다시 평가합니다.' },
+      { q: '사고 후 바로 검사가 필요한 경우도 있나요?', a: '새로 생긴 팔다리의 힘 빠짐이나 보행 이상 등 신경학적 증상이 있으면 신속한 평가가 필요합니다. 처음 받은 검사 결과와 현재 복용약을 알려주시면 진료에 도움이 됩니다.' }
+    ]} />
+    <div className="care-visit"><div><h3>직장인 점심 진료</h3><p>11:30~13:00에도 진료합니다.<br />휴게시간 14:00~15:00</p></div><NaverCTA text="교통사고 진료 예약" placement="care_accident" className="care-button" /></div>
+  </div></section>;
 }

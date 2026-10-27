@@ -27,3 +27,61 @@ body {
   font-family: var(--font-custom);
   font-size: 1.125rem; /* Base size + */
 }
+
+/* Patient guides: readable text and full-width cards on small screens. */
+.care-section {padding:64px 0;scroll-margin-top:140px;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',sans-serif;font-size:17px;line-height:1.85;color:#49362e;background:#fffdf8;word-break:keep-all;overflow-wrap:anywhere;}
+.care-shell {width:calc(100% - 32px);max-width:1024px;margin:0 auto;}
+.care-heading {max-width:720px;margin:0 0 32px;}
+.care-heading h2 {font-family:var(--font-custom);font-size:clamp(30px,5vw,48px);font-weight:700;line-height:1.4;margin:8px 0 16px;}
+.care-section h3 {font-size:clamp(23px,3vw,30px);line-height:1.5;font-weight:750;margin:0 0 16px;}
+.care-section h4 {font-size:21px;line-height:1.5;font-weight:750;margin:0 0 10px;}
+.care-section p {margin:0 0 16px;}
+.care-section p:last-child {margin-bottom:0;}
+.care-section .care-eyebrow {font-size:15px;font-weight:750;letter-spacing:.02em;margin-bottom:8px;color:#7b5736;}
+.care-grid {display:grid;gap:32px;align-items:start;}
+.care-dark {background:#552c24;color:#fff9ee;}
+.care-dark .care-eyebrow,.care-dark h2 {color:#ffcd4a;}
+.care-treatment {margin:24px 0;padding:24px;border:1px solid #d5c3ad;border-radius:20px;background:#fff8ea;color:#49362e;}
+.care-treatment h4:not(:first-child) {margin-top:24px;}
+.care-dark .care-treatment {background:#40221e;color:#fff9ee;border-color:#82645c;}
+.care-dark .care-treatment h4 {color:#ffcd4a;}
+.care-highlight {border-radius:18px;padding:24px;background:#f7ecd3;color:#49362e;margin:24px 0;}
+.care-highlight strong {display:block;font-size:22px;line-height:1.5;margin-bottom:12px;}
+.care-article {background:white;border:1px solid #e9dfd1;border-radius:24px;padding:24px 16px;margin-top:32px;scroll-margin-top:140px;}
+.care-intro {display:grid;gap:24px;margin-bottom:24px;align-items:center;}
+.care-intro img {width:100%;height:auto;border-radius:16px;}
+.care-two-cards {display:grid;gap:16px;}
+.care-card {padding:24px;border-radius:18px;}
+.care-card strong {display:block;padding-top:16px;margin-top:16px;border-top:1px solid currentColor;font-size:19px;line-height:1.6;}
+.care-peach {background:#fbede5;color:#81402b;}
+.care-mint {background:#e9f2ed;color:#235b49;}
+.care-blue {background:#e8f0fa;color:#315d80;}
+.care-callout {padding:24px 0;}
+.care-offer {margin-top:24px;padding:24px 20px;border-radius:20px;background:#fff3d4;}
+.care-section .care-price {font-size:25px;line-height:1.5;}
+.care-price strong {font-size:36px;white-space:nowrap;color:#a94328;}
+.care-section .care-note {font-size:15px;line-height:1.75;color:#705e50;}
+.care-questions {margin:28px 0 20px;border-top:1px solid #d8cbbf;}
+.care-questions details {border-bottom:1px solid #d8cbbf;}
+.care-questions summary {list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:18px 4px;font-weight:700;font-size:17px;line-height:1.6;cursor:pointer;}
+.care-questions summary::-webkit-details-marker {display:none;}
+.care-questions summary span {font-size:23px;flex-shrink:0;transition:transform .15s;}
+.care-questions details[open] summary span {transform:rotate(45deg);}
+.care-questions details p {padding:0 4px 22px;}
+.care-chart {margin:20px 0 0;padding:16px 8px 20px;background:#fffdf8;border-radius:20px;color:#49362e;}
+.care-chart img {width:100%;max-width:480px;height:auto;display:block;margin:auto;}
+.care-chart figcaption {font-size:14px;line-height:1.75;padding:4px 12px 0;color:#6c5b4e;}
+.care-legend {display:flex;flex-wrap:wrap;gap:6px 18px;padding:0 12px 10px;font-size:15px;line-height:1.6;}
+.care-legend span {display:flex;gap:8px;align-items:center;}
+.care-legend i {width:24px;border-top:3px solid #21735d;display:inline-block;}
+.care-legend i.dashed {border-top:3px dashed #b94c2e;}
+.care-actions {display:flex;flex-direction:column;gap:12px;margin-top:24px;}
+.care-button,.care-phone {min-height:52px;padding:14px 20px;font-size:17px;text-align:center;line-height:1.5;}
+.care-button svg {flex-shrink:0;}
+.care-phone {border:1px solid #bca58e;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;}
+.care-visit {display:grid;gap:20px;padding:24px;background:#552c24;color:#fff9ee;border-radius:20px;margin-top:28px;}
+.care-section a:focus-visible,.care-section summary:focus-visible {outline:3px solid #d59a16;outline-offset:4px;}
+@media(min-width:640px) {.care-shell{width:calc(100% - 48px)}.care-two-cards{grid-template-columns:1fr 1fr}.care-article{padding:32px}.care-actions{flex-direction:row}.care-actions .care-button{flex:1}.care-intro{grid-template-columns:.85fr 1fr}.care-visit{grid-template-columns:1fr auto;align-items:center}.care-offer{padding:28px}}
+@media(min-width:900px) {.care-section{padding:88px 0;font-size:18px}.care-grid{grid-template-columns:1fr 1fr;gap:40px}.care-article{padding:40px}.care-heading{margin-bottom:40px}}
+@media(max-width:420px) {header.fixed>div:first-child>div{gap:8px;padding-left:12px;padding-right:12px}header.fixed>div:first-child>div>button{gap:6px}header.fixed>div:first-child>div>button img{width:30px;height:30px}header.fixed>div:first-child>div>button span{font-size:18px}header.fixed>div:first-child>div>div{gap:8px}header.fixed>div:first-child>div>div>a{padding:8px 10px;font-size:14px}header.fixed>div:first-child>div>div>button{font-size:12px}}
+@media(prefers-reduced-motion:reduce) {*{scroll-behavior:auto!important}.care-questions summary span{transition:none}}
