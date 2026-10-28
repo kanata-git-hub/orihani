@@ -5,6 +5,7 @@ import { NAV_LINKS } from './constants/data';
 import LogoImage from './오리 - 로고_브라운(화이트).png';
 
 import HeroSection from './components/sections/HeroSection';
+import PrimaryCareSection from './components/sections/PrimaryCareSection';
 import PainPointSection from './components/sections/PainPointSection';
 import SolutionPainSection from './components/sections/SolutionPainSection';
 import SolutionDietSection from './components/sections/SolutionDietSection';
@@ -90,7 +91,8 @@ export default function App() {
         </div>
       </header>
 
-      <HeroSection onShowProfile={() => scrollTo('profile')} />
+      <HeroSection onShowProfile={() => scrollTo('profile')} onShowPain={() => scrollTo('clinic-pain')} />
+      <PrimaryCareSection onSelect={scrollTo} />
       <SolutionInternalSection />
       <PainPointSection />
       <SolutionPainSection />

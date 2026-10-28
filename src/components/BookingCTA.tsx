@@ -14,6 +14,11 @@ const bookingOptions = [
     description: '쉬어도 피곤하고 기력이 떨어질 때',
     href: 'https://m.booking.naver.com/booking/13/bizes/1520704/items/8114052',
   },
+  {
+    title: '만성통증 진료 예약',
+    description: '반복되는 근육·관절 통증이 있을 때',
+    href: 'https://m.booking.naver.com/booking/13/bizes/1520704/items/7140755',
+  },
 ];
 
 function trackReservationClick() {
@@ -76,15 +81,6 @@ export function BookingProvider({ children }: { children: React.ReactNode }) {
             </a>
           ))}
         </div>
-        <a
-          href="https://m.booking.naver.com/booking/13/bizes/1520704/items/7140755"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={trackReservationClick}
-          className="booking-other"
-        >
-          통증·기타 진료 예약 <ChevronRight aria-hidden="true" />
-        </a>
       </dialog>
     </BookingContext.Provider>
   );

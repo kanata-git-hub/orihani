@@ -9,7 +9,7 @@ const fadeIn = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
-export default function HeroSection({ onShowProfile }: { onShowProfile: () => void }) {
+export default function HeroSection({ onShowProfile, onShowPain }: { onShowProfile: () => void; onShowPain: () => void }) {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 lg:pt-52 lg:pb-32 overflow-hidden bg-gradient-to-br from-[#fefaf4] via-white to-[#fff8ea]">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
@@ -33,6 +33,10 @@ export default function HeroSection({ onShowProfile }: { onShowProfile: () => vo
             반복되는 불편을 오리한의원에서 치료하세요.
           </p>
           <BookingCTA className="px-8 py-4 md:px-10 md:py-5 text-xl md:text-2xl w-full sm:w-auto" text="소화불량·피로 진료 예약" />
+          <button type="button" onClick={onShowPain} className="hero-pain-link">
+            <span>만성통증 · 도침·약침 진료</span>
+            <ChevronRight aria-hidden="true" />
+          </button>
         </motion.div>
         
         <motion.div 

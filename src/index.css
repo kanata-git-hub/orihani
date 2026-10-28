@@ -142,6 +142,20 @@ body {
 @media(min-width:640px) {.clinic-nav{display:flex;gap:8px;padding:8px 24px}.clinic-nav button{padding:8px 18px;}}
 
 /* Shared reservation choices keep ad visitors on the right booking path. */
+.hero-pain-link {display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;max-width:410px;min-height:56px;margin-top:12px;padding:12px 20px;border:1px solid #bca58e;border-radius:12px;background:#fffdf8;color:var(--color-primary);font-size:21px;font-weight:700;line-height:1.5;cursor:pointer;}
+.hero-pain-link:hover {background:#fff3d4;}
+.hero-pain-link svg {width:22px;height:22px;flex-shrink:0;}
+.hero-pain-link:focus-visible,.primary-care button:focus-visible {outline:3px solid var(--color-primary);outline-offset:4px;}
+.primary-care {padding:32px 24px 40px;background:#fff8ea;border-top:1px solid #e9dfd1;border-bottom:1px solid #e9dfd1;color:var(--color-primary);}
+.primary-care-shell {max-width:976px;margin:0 auto;}
+.primary-care h2 {margin:0 0 20px;font-size:28px;font-weight:700;line-height:1.4;}
+.primary-care-options {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+.primary-care-options button {display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0;padding:20px 8px;border:1px solid #e2cfad;border-radius:16px;background:white;cursor:pointer;}
+.primary-care-options button:hover {background:#fff3d4;border-color:#bca58e;}
+.primary-care-options strong {font-size:24px;line-height:1.4;white-space:nowrap;}
+.primary-care-options span {font-size:18px;line-height:1.5;color:#705e50;}
+.primary-care-options svg {width:20px;height:20px;margin-top:4px;}
+@media(max-width:420px) {.primary-care{padding:28px 16px 32px}.primary-care-options{gap:8px}.primary-care-options strong{font-size:21px}.primary-care-options span{font-size:17px}.primary-care-options button{padding:16px 4px}.hero-pain-link{font-size:20px}}
 .booking-trigger {cursor:pointer;}
 .booking-trigger:focus-visible {outline:3px solid var(--color-primary);outline-offset:4px;}
 .booking-dialog {position:fixed;inset:0;margin:auto;width:calc(100% - 32px);max-width:460px;max-height:calc(100dvh - 32px);overflow-y:auto;padding:32px 24px 24px;border:1px solid #e9dfd1;border-radius:24px;background:#fffdf8;color:var(--color-primary);font-family:var(--font-custom);box-shadow:0 24px 80px rgb(37 23 18 / .25);word-break:keep-all;}
@@ -150,13 +164,11 @@ body {
 .booking-dialog>p {margin:0 0 24px;font-size:17px;line-height:1.6;color:#705e50;}
 .booking-close {position:absolute;right:12px;top:12px;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;color:var(--color-primary);cursor:pointer;}
 .booking-close:hover {background:#f7ecd3;}
-.booking-options {display:grid;gap:12px;}
+.booking-options {display:grid;grid-auto-rows:1fr;gap:12px;}
 .booking-option {display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:88px;padding:18px;border:1px solid #e9cd82;border-radius:16px;background:#fff3d4;}
 .booking-option:hover {background:#ffeab2;}
 .booking-option strong {display:block;font-size:23px;font-weight:700;line-height:1.4;}
 .booking-option span span {display:block;margin-top:4px;font-size:17px;line-height:1.5;color:#705e50;}
-.booking-option>svg,.booking-other>svg {width:22px;height:22px;flex-shrink:0;}
-.booking-other {display:flex;align-items:center;justify-content:center;gap:4px;min-height:48px;margin-top:16px;padding:10px 8px;border:1px solid #d5c3ad;border-radius:12px;font-size:18px;line-height:1.5;}
-.booking-other:hover {background:#f7ecd3;}
+.booking-option>svg {width:22px;height:22px;flex-shrink:0;}
 .booking-dialog a:focus-visible,.booking-dialog button:focus-visible {outline:3px solid #a26d00;outline-offset:3px;}
 @media(max-width:420px) {header.fixed>div:first-child>div>div>.booking-trigger{padding:8px 10px;font-size:14px}.booking-dialog{padding:28px 18px 20px}.booking-dialog h2{font-size:28px}.booking-option{padding:16px 14px}.booking-option strong{font-size:22px}}
