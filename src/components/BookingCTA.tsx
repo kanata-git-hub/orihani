@@ -16,6 +16,12 @@ const bookingOptions = [
   },
 ];
 
+function trackReservationClick() {
+  if (typeof (window as any).gtag === 'function') {
+    (window as any).gtag('event', 'click_naver_reservation', { cta_placement: 'booking_choice' });
+  }
+}
+
 export function BookingProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -64,7 +70,7 @@ export function BookingProvider({ children }: { children: React.ReactNode }) {
         <p id="booking-dialog-description">선택하시면 네이버 예약으로 연결됩니다.</p>
         <div className="booking-options">
           {bookingOptions.map(({ title, description, href }) => (
-            <a key={href} href={href} target="_blank" rel="noopener noreferrer" className="booking-option">
+            <a key={href} href={href} target="_blank" rel="noopener noreferrer" onClick={trackReservationClick} className="booking-option">
               <span><strong>{title}</strong><span>{description}</span></span>
               <ChevronRight aria-hidden="true" />
             </a>
@@ -74,6 +80,7 @@ export function BookingProvider({ children }: { children: React.ReactNode }) {
           href="https://m.booking.naver.com/booking/13/bizes/1520704/items/7140755"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackReservationClick}
           className="booking-other"
         >
           통증·기타 진료 예약 <ChevronRight aria-hidden="true" />
