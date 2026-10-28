@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
-import NaverCTA from '../NaverCTA';
+import BookingCTA from '../BookingCTA';
 import DoctorImage from '../../프사 1대1.png';
 
 const fadeIn = {
@@ -9,7 +9,7 @@ const fadeIn = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
-export default function HeroSection({ onShowProfile }: { onShowProfile: () => void }) {
+export default function HeroSection({ onShowProfile, onShowPain }: { onShowProfile: () => void; onShowPain: () => void }) {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 lg:pt-52 lg:pb-32 overflow-hidden bg-gradient-to-br from-[#fefaf4] via-white to-[#fff8ea]">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
@@ -18,10 +18,9 @@ export default function HeroSection({ onShowProfile }: { onShowProfile: () => vo
           className="flex flex-col items-start z-10"
         >
           <span className="inline-block px-4 py-1.5 md:px-5 md:py-2 mb-4 md:mb-6 text-lg md:text-xl font-bold text-primary bg-accent/30 rounded-full mt-8 md:mt-0">
-            동대구역 통증·소화·피로 진료
+            동대구역 소화불량·피로 한약 진료
           </span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-primary mb-6 md:mb-8 break-keep">
-            물리치료를 받아도 그때뿐인가요?<br/>
             소화제를 먹어도 또 체하나요?<br/>
             <span className="relative inline-block mt-2">
               <span className="absolute bottom-1 md:bottom-2 left-0 w-full h-3 md:h-4 bg-accent -z-10 opacity-70"></span>
@@ -29,11 +28,15 @@ export default function HeroSection({ onShowProfile }: { onShowProfile: () => vo
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-primary/80 mb-8 md:mb-10 max-w-lg leading-relaxed font-medium">
-            다시 아프고, 또 체하고, 매일 지치는 일상.<br/>
-            참고 버티는 데서 끝내지 마세요.<br/>
-            반복되는 불편을 오리한의원에서 치료하세요.
+            반복되는 소화불량·피로부터<br/>
+            오래된 근육·관절 통증까지.<br/>
+            증상과 몸 상태에 맞춰 진료합니다.
           </p>
-          <NaverCTA className="px-8 py-4 md:px-10 md:py-5 text-xl md:text-2xl w-full sm:w-auto" text="내 증상에 맞는 진료 예약" />
+          <BookingCTA className="px-8 py-4 md:px-10 md:py-5 text-xl md:text-2xl w-full sm:w-auto" text="소화불량·피로 진료 예약" />
+          <button type="button" onClick={onShowPain} className="hero-pain-link">
+            <span>만성통증 · 도침·약침 진료</span>
+            <ChevronRight aria-hidden="true" />
+          </button>
         </motion.div>
         
         <motion.div 

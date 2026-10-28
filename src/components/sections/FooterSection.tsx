@@ -1,6 +1,6 @@
 import React from 'react';
 import { Clock, MapPin, Car, Instagram, Youtube, Globe } from 'lucide-react';
-import NaverCTA from '../NaverCTA';
+import BookingCTA from '../BookingCTA';
 import KakaoMap from '../KakaoMap';
 import DoctorImage from '../../프사 1대1.png';
 
@@ -90,9 +90,9 @@ export default function FooterSection() {
         <div className="bg-[#fff8ea] rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 lg:p-16 text-center border-4 border-accent shadow-2xl relative overflow-hidden">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6 relative z-10 break-keep">또 아프고, 또 체하고, 또 지친다면.</h2>
           <p className="text-xl md:text-2xl text-primary/70 mb-8 md:mb-10 relative z-10 break-keep">참고 버티는 일상, 이제 치료를 시작하세요.</p>
-          <NaverCTA 
+          <BookingCTA 
             className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 text-xl md:text-2xl shadow-xl shadow-accent/30 hover:shadow-accent/50 relative z-10" 
-            text="지금 네이버로 예약하기" 
+            text="진료 선택하고 예약하기" 
             showIcon={true}
           />
         </div>
