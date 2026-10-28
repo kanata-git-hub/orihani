@@ -140,3 +140,23 @@ body {
 .clinic-nav button:hover {background:rgb(255 205 74 / .3);}
 .clinic-nav button:focus-visible {outline:2px solid var(--color-primary);outline-offset:2px;}
 @media(min-width:640px) {.clinic-nav{display:flex;gap:8px;padding:8px 24px}.clinic-nav button{padding:8px 18px;}}
+
+/* Shared reservation choices keep ad visitors on the right booking path. */
+.booking-trigger {cursor:pointer;}
+.booking-trigger:focus-visible {outline:3px solid var(--color-primary);outline-offset:4px;}
+.booking-dialog {position:fixed;inset:0;margin:auto;width:calc(100% - 32px);max-width:460px;max-height:calc(100dvh - 32px);overflow-y:auto;padding:32px 24px 24px;border:1px solid #e9dfd1;border-radius:24px;background:#fffdf8;color:var(--color-primary);font-family:var(--font-custom);box-shadow:0 24px 80px rgb(37 23 18 / .25);word-break:keep-all;}
+.booking-dialog::backdrop {background:rgb(37 23 18 / .5);}
+.booking-dialog h2 {margin:0 36px 12px 0;font-size:30px;font-weight:700;line-height:1.35;}
+.booking-dialog>p {margin:0 0 24px;font-size:17px;line-height:1.6;color:#705e50;}
+.booking-close {position:absolute;right:12px;top:12px;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;color:var(--color-primary);cursor:pointer;}
+.booking-close:hover {background:#f7ecd3;}
+.booking-options {display:grid;gap:12px;}
+.booking-option {display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:88px;padding:18px;border:1px solid #e9cd82;border-radius:16px;background:#fff3d4;}
+.booking-option:hover {background:#ffeab2;}
+.booking-option strong {display:block;font-size:23px;font-weight:700;line-height:1.4;}
+.booking-option span span {display:block;margin-top:4px;font-size:17px;line-height:1.5;color:#705e50;}
+.booking-option>svg,.booking-other>svg {width:22px;height:22px;flex-shrink:0;}
+.booking-other {display:flex;align-items:center;justify-content:center;gap:4px;min-height:48px;margin-top:16px;padding:10px 8px;border:1px solid #d5c3ad;border-radius:12px;font-size:18px;line-height:1.5;}
+.booking-other:hover {background:#f7ecd3;}
+.booking-dialog a:focus-visible,.booking-dialog button:focus-visible {outline:3px solid #a26d00;outline-offset:3px;}
+@media(max-width:420px) {header.fixed>div:first-child>div>div>.booking-trigger{padding:8px 10px;font-size:14px}.booking-dialog{padding:28px 18px 20px}.booking-dialog h2{font-size:28px}.booking-option{padding:16px 14px}.booking-option strong{font-size:22px}}
