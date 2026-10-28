@@ -28,9 +28,9 @@ export default function HeroSection({ onShowProfile, onShowPain }: { onShowProfi
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-primary/80 mb-8 md:mb-10 max-w-lg leading-relaxed font-medium">
-            또 체하고, 매일 지치는 일상.<br/>
-            참고 버티는 데서 끝내지 마세요.<br/>
-            반복되는 불편을 오리한의원에서 치료하세요.
+            반복되는 소화불량·피로부터<br/>
+            오래된 근육·관절 통증까지.<br/>
+            증상과 몸 상태에 맞춰 진료합니다.
           </p>
           <BookingCTA className="px-8 py-4 md:px-10 md:py-5 text-xl md:text-2xl w-full sm:w-auto" text="소화불량·피로 진료 예약" />
           <button type="button" onClick={onShowPain} className="hero-pain-link">
