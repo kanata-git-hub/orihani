@@ -9,6 +9,6 @@ export default function SolutionAutoSection() {
       <div><div className="care-card care-mint"><h3>교통사고 환자의 1/2은</h3><p>어지럼 · 구역감 · 두근거림 · 불면<br />중 하나 이상 있습니다.</p><strong>21일(7일씩) 한약으로 치료합니다</strong></div>
       <div className="care-treatment care-auto-treatments"><h3>통증 치료</h3><h4>약침</h4><p>소염</p><h4>추나</h4><p>관절 교정</p><h4>침</h4><p>근육 이완</p></div></div>
     </div>
-    <div className="care-actions"><NaverCTA text="교통사고 진료 예약" placement="care_accident" className="care-button" /></div>
+    <div className="care-actions"><NaverCTA text="교통사고 진료 예약" href="https://m.booking.naver.com/booking/16/bizes/1778377/items/8242107" placement="care_accident" className="care-button" /></div>
   </div></section>;
 }

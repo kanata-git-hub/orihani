@@ -9,7 +9,7 @@ interface NaverCTAProps {
   href?: string;
 }
 
-export default function NaverCTA({ className = "", text = "네이버 예약하기", showIcon = true, placement = "general", href = "https://m.booking.naver.com/booking/13/bizes/1520704/items/7140755" }: NaverCTAProps) {
+export default function NaverCTA({ className = "", text = "네이버 예약하기", showIcon = true, placement = "general", href = "https://m.booking.naver.com/booking/16/bizes/1778377" }: NaverCTAProps) {
   const handleClick = () => {
     if (typeof (window as any).gtag === 'function') {
       (window as any).gtag('event', 'click_naver_reservation', { cta_placement: placement });

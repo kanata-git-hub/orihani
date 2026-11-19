@@ -7,18 +7,21 @@ const bookingOptions = [
   {
     title: '소화불량 한약 예약',
     description: '자주 체하고 속이 불편할 때',
-    href: 'https://m.booking.naver.com/booking/13/bizes/1520704/items/8114050',
+    href: 'https://m.booking.naver.com/booking/16/bizes/1778377/items/8217161',
   },
   {
     title: '만성 피로 한약 예약',
     description: '쉬어도 피곤하고 기력이 떨어질 때',
-    href: 'https://m.booking.naver.com/booking/13/bizes/1520704/items/8114052',
+    href: 'https://m.booking.naver.com/booking/16/bizes/1778377/items/8217294',
   },
   {
     title: '만성통증 진료 예약',
     description: '반복되는 근육·관절 통증이 있을 때',
-    href: 'https://m.booking.naver.com/booking/13/bizes/1520704/items/7140755',
+    href: 'https://m.booking.naver.com/booking/16/bizes/1778377',
   },
+  { title: '교통사고 치료 예약', description: '', href: 'https://m.booking.naver.com/booking/16/bizes/1778377/items/8242107' },
+  { title: '다이어트 한약 예약', description: '', href: 'https://m.booking.naver.com/booking/16/bizes/1778377/items/8217472' },
+  { title: '공진단 예약', description: '', href: 'https://m.booking.naver.com/booking/16/bizes/1778377/items/8217309' },
 ];
 
 function trackReservationClick() {
